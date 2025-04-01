@@ -1,0 +1,112 @@
+/* Fire Background */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: url('fire-bg.jpg ') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    width: 50%;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(255, 69, 0, 0.7);
+}
+
+/* Headings */
+h1 {
+    color: #ff4500;
+    text-shadow: 2px 2px 8px rgba(255, 140, 0, 0.8);
+}
+
+/* File Upload */
+input[type="file"] {
+    margin: 10px 0;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+}
+
+/* Upload Button */
+.upload-btn {
+    padding: 12px 24px;
+    background: linear-gradient(to right, red, orange);
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+    box-shadow: 0px 4px 8px rgba(255, 69, 0, 0.7);
+}
+
+.upload-btn:hover {
+    background: linear-gradient(to right, darkred, orangered);
+    transform: scale(1.05);
+}
+
+/* Image Preview */
+img {
+    width: 300px;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+/* Result */
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 69, 0, 0.2);
+}
+
+/* Fire Prediction - Red */
+.fire {
+    background: rgba(255, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 2px solid red;
+    padding: 10px;
+}
+
+/* No Fire Prediction - Green */
+.no-fire {
+    background: rgba(0, 255, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 2px solid limegreen;
+    padding: 10px;
+}
+
+/* Error Messages */
+.error {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* Loading Animation */
+.hidden {
+    display: none;
+}
+
+#loading {
+    font-size: 18px;
+    color: yellow;
+    font-weight: bold;
+    margin-top: 10px;
+    animation: blink 1s infinite;
+}
+
+/* Blinking Animation for Loading */
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
